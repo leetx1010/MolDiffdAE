@@ -77,7 +77,7 @@ transform:
 
 dataset:
   name: drug3d
-  root: /home/mli/tili/mnt/MolDiffAE/data/geom_drug
+  root: ./data/geom_drug
   path_dict:
     sdf: sdf
     summary: mol_summary.csv
