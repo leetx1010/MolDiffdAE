@@ -1,4 +1,0 @@
-0819: 
-- Classifier guidance uses validation set
-- Linear uses test set (need to regularize training data)
-- All experiments performed on the same templates (need to split by original property values)
