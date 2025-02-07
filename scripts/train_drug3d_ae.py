@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     # Datasets and loaders
     if args.dataset == 'crossdocked':
-        config.dataset.root='/home/mli/tili/mnt/MolDiffAE/data/crossdocked'
+        config.dataset.root='./data/crossdocked'
     logger.info('Loading dataset...')
     dataset, subsets = get_dataset(
         config = config.dataset,

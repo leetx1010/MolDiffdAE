@@ -140,9 +140,9 @@ if __name__ == '__main__':
         config.train.max_iters=10000     
         config.train.val_freq=1000
     elif args.ft_set in ['binding', 'drd2'] :
-        config.dataset.root='/home/mli/tili/mnt/MolDiffAE/data/geom_drug_binding_ft'
+        config.dataset.root='./data/geom_drug_binding_ft'
     elif args.ft_set == 'crossdocked':
-        config.dataset.root='/home/mli/tili/mnt/MolDiffAE/data/crossdocked_ft'
+        config.dataset.root='./data/crossdocked_ft'
     logger.info('Loading dataset...')
     dataset, subsets = get_dataset(
         config = config.dataset,

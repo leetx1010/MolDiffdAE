@@ -43,12 +43,12 @@ config.model.diff.categorical_space='continuous'
 config.model.diff.scaling = [1., 4., 8.]
 config.dataset.name='crossdocked'
 config.dataset.split='split_by_key.pt'
-config.dataset.root='/home/mli/tili/mnt/MolDiffAE/data/crossdocked'
+config.dataset.root=',/data/crossdocked'
 config.model.encoder.emb_dim = 32
 config.train.batch_size = 16
 config.train.num_workers = 1
 
-protein_root='/home/mli/tili/Projects/MolDiffAE/MolInterDiffAE/data/test_set/'
+protein_root='./data/crossdocked/test_set/'
 
     
 
@@ -192,7 +192,7 @@ def qvina_score(mol, mol_orig, ligand_filename):
     except:
         return 1
         
-split_by_name = torch.load('/home/mli/tili/Projects/MolDiffAE/MolInterDiffAE/data/split_by_name.pt')
+split_by_name = torch.load('./data/crossdocked/split_by_name.pt')
 test_sdf = [n[1] for n in split_by_name['test']]
 
 qvina_score_res = {}
