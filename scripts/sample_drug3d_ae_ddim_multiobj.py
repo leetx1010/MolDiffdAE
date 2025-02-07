@@ -372,7 +372,7 @@ if __name__ == '__main__':
     if args.name == 'crossdocked':
         config.dataset.name='crossdocked'
         config.dataset.split='split_by_key.pt'
-        config.dataset.root='/home/mli/tili/mnt/MolDiffAE/data/crossdocked'
+        config.dataset.root='./data/crossdocked'
         
     dataset, subsets = get_dataset(
         config = config.dataset,
