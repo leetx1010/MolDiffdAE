@@ -1,6 +1,24 @@
 Code for "Disentangled Autoencoding Equivariant Diffusion Model for Controlled Generation of 3D Molecules"
 ======
 
+***Environment***
+Pleae first install conda
+
+conda create --name moldiffdae --file env.yml
+conda activate moldiffdae
+conda install pip
+
+Use pip to install torch (cuda-toolkit version should match system cuda version; higher versions of torch may also work):
+      - torch==2.0.1+cu118
+      - torch-cluster==1.6.3+pt20cu118
+      - torch-geometric==2.3.1
+      - torch-scatter==2.1.2+pt20cu118
+      - torch-sparse==0.6.18+pt20cu118
+      - torch-spline-conv==1.2.2+pt20cu118
+      - torchmetrics==0.11.4
+      - cuda-toolkit=11.8.0=0
+      - cuda-tools=11.8.0=0
+
 ***Training***
 
 python3 scripts/train_drug3d_ae.py --config configs/train/train_MolDiffAE_${mode}.yml --emb_dim ${emb_dim} --wass_weight ${wass_weight} --batch_size ${batch_size} --logdir ${savedir}
