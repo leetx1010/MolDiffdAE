@@ -5,7 +5,9 @@ Code for "Disentangled Autoencoding Equivariant Diffusion Model for Controlled G
 Pleae first install conda
 
 conda create --name moldiffdae --file env.yml
+
 conda activate moldiffdae
+
 conda install pip
 
 Use pip to install torch (cuda-toolkit version should match system cuda version; higher versions of torch may also work):
