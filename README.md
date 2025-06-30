@@ -31,6 +31,16 @@ Use pip to install torch (cuda-toolkit version should match system cuda version;
       
       - cuda-tools=11.8.0=0
 
+Example: 
+
+pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 \
+  -f https://download.pytorch.org/whl/torch_stable.html
+
+pip install torch-scatter torch-sparse torch-cluster torch-spline-conv \
+  -f https://data.pyg.org/whl/torch-2.0.1+cu118.html
+
+pip install torch-geometric==2.3.1 torchmetrics==0.11.4
+
 ***Training***
 
 python3 scripts/train_drug3d_ae.py --config configs/train/train_MolDiffAE_${mode}.yml --emb_dim ${emb_dim} --wass_weight ${wass_weight} --batch_size ${batch_size} --logdir ${savedir}
