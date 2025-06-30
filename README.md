@@ -5,7 +5,7 @@ Code for "Disentangled Autoencoding Equivariant Diffusion Model for Controlled G
 
 Pleae first install conda
 
-conda create --name moldiffdae --file env.yml
+conda env create --name moldiffdae --file env.yml
 
 conda activate moldiffdae
 
