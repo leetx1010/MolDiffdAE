@@ -11,7 +11,12 @@ conda activate moldiffdae
 
 conda install pip
 
-Use pip to install torch (cuda-toolkit version should match system cuda version; higher versions of torch may also work):
+Install rdkit:
+
+pip install rdkit==2024.3.2
+
+
+Install torch (cuda-toolkit version should match system cuda version; higher versions of torch may also work):
 
       - torch==2.0.1+cu118
       
