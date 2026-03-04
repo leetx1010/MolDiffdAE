@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Li
+  given-names: Tianxiao
+orcid: https://orcid.org/0000-0002-9147-7511
+title: Code release for "Disentangled Autoencoding Equivariant Diffusion Model for Controlled Generation of 3D Molecules"
+version: v1.0.0
+date-released: 2026-02-16
